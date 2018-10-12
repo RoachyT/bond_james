@@ -1,0 +1,7 @@
+C:\Users\rtoles\Desktop\buy_a_vowel\vowels_Toles\vowels_Toles\bin\Debug\vowels_Toles.exe.config
+C:\Users\rtoles\Desktop\buy_a_vowel\vowels_Toles\vowels_Toles\bin\Debug\vowels_Toles.exe
+C:\Users\rtoles\Desktop\buy_a_vowel\vowels_Toles\vowels_Toles\bin\Debug\vowels_Toles.pdb
+C:\Users\rtoles\Desktop\buy_a_vowel\vowels_Toles\vowels_Toles\obj\Debug\vowels_Toles.csprojAssemblyReference.cache
+C:\Users\rtoles\Desktop\buy_a_vowel\vowels_Toles\vowels_Toles\obj\Debug\vowels_Toles.csproj.CoreCompileInputs.cache
+C:\Users\rtoles\Desktop\buy_a_vowel\vowels_Toles\vowels_Toles\obj\Debug\vowels_Toles.exe
+C:\Users\rtoles\Desktop\buy_a_vowel\vowels_Toles\vowels_Toles\obj\Debug\vowels_Toles.pdb
