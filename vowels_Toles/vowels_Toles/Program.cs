@@ -11,11 +11,12 @@ namespace vowels_Toles
     {
         static void Main(string[] args)
         {
-            Reggie(@"[AEIOUaeiou]", "Please enter a word or sentence: ");
-
+            int countVowel = Reggie(@"[AEIOUaeiou]", "Please enter a word or sentence: ");
+            Console.WriteLine("There are/is " + countVowel + " vowels.");
+            Rerun();
         }
 
-        static void Reggie(string pleaseWork, string prompt)
+        static int Reggie(string pleaseWork, string prompt)
         {
             while (true)
             {
@@ -23,42 +24,45 @@ namespace vowels_Toles
                 Console.WriteLine(prompt);
                 string answer = Console.ReadLine();
                 string[] sentence = answer.Split(' ');
+                int countVowel = 0;
 
                 foreach (var letter in sentence)
                 {
-                    
-                    int countVowel = 0;
                     for (int i = 0; i < answer.Length; i++)
                     {
-                        if (Regex.IsMatch(answer[i].ToString()))
+                        if (Regex.IsMatch(answer[i].ToString(), pleaseWork))
                         {
-                            countVowel = i + 1;
+                            countVowel++;
                         }
-                        else
-                        {
-                            break;
-                        }
-                        Console.WriteLine("There are/is " + countVowel + " vowels.");
+
                     }
                 }
-
-                Console.WriteLine("\nCheck another line? y/n");
-
-                string repeat = Console.ReadLine().ToLower();
-
-                if (repeat == "y" || repeat == "yes")
-                {
-                    continue;
-                }
-
-                else
-                {
-                    Console.WriteLine("Goodbye");
-                    break;
-                }
+                return countVowel;
 
             }
 
         }
+        static void Rerun()
+        {
+
+            Console.WriteLine("\nCheck another line? y/n");
+
+            string repeat = Console.ReadLine().ToLower();
+
+            if (repeat == "y" || repeat == "yes")
+            {
+                Reggie(@"[AEIOUaeiou]", "Please enter a word or sentence: ");
+            }
+
+            else
+            {
+                Console.WriteLine("Goodbye");
+                Environment.Exit(0);
+            }
+
+        }
     }
+
+
+
 }
